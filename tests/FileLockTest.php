@@ -39,7 +39,7 @@ class FileLockTest extends TestCase {
 */
 		//try to unlock file
 		$this->assertEquals(true, $lock->release(),'ERROR[6]: Result of function release() not correct!'. PHP_EOL);
-/*		
+		
 		$handle = fopen($fname, 'r+');	
 
 		//try to write
@@ -47,6 +47,6 @@ class FileLockTest extends TestCase {
 		$this->assertTrue($fwrite_res,'ERROR[7]: File "'.$fname.'" locked! Writing fail.'. PHP_EOL);
 		   
 		fclose($handle);
-*/
+
 	}
 }
